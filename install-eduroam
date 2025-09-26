@@ -1,7 +1,7 @@
-sudo apt install flatpak
-sudo apt install gnome-software-plugin-flatpak
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+sudo apt install flatpak -y
+sudo apt install gnome-software-plugin-flatpak -y
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo -y
 
-flatpak install app.eduroam.geteduroam
+flatpak install app.eduroam.geteduroam -y
 flatpak run app.eduroam.geteduroam >/dev/null 2>&1 &
 exit
